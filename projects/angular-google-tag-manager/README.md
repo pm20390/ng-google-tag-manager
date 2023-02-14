@@ -1,6 +1,6 @@
-# Angular Google Tag Manager Service
+# Ng Google Tag Manager Service
 
-I've forked this package from mzuccaroli as there were some issues that needed to be fixed, and I am using this in production. Feel free to create pull requests / commits as needed.
+Forked of "angular-google-tag-manager" as there were some issues that needed to be fixed, and some features that I have added. I am using this in production, so will continue to maintain it and encourage feature requests and pull requests.
 
 A service library for integrate google tag manager in your angular project
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli)
@@ -109,7 +109,8 @@ You can pass _gtm_preview_ and _gtm_auth_ optional variables to your GTM by prov
         {provide: 'googleTagManagerAuth',  useValue: YOUR_GTM_AUTH},
         {provide: 'googleTagManagerPreview',  useValue: YOUR_GTM_ENV},
         {provide: 'googleTagManagerResourcePath',  useValue: YOUR_GTM_RESOURCE_PATH},
-        {provide: 'googleTagManagerCSPNonce',  useValue: YOUR_CSP_NONCE}
+        {provide: 'googleTagManagerCSPNonce',  useValue: YOUR_CSP_NONCE},
+        {provide: 'googleTagManagerMode', useValue: "silent" | "noisy"}
     ],
 ```
 
@@ -128,11 +129,22 @@ imports: [
 ]
 ```
 
+## ⭐ New Features (v1.7.3)
+Added "Silent mode" to stop error from throwing if GTM can't attach. Particularly useful is dynamically loading GTM ids that may or may not exist.
+
+```
+    providers: [
+        ...
+        {provide: 'googleTagManagerMode', useValue: "silent" | "noisy"}
+    ],
+```
+
 ## Authors
 
 - **Marco Zuccaroli** - _Initial work_ - [Marco Zuccaroli](https://github.com/mzuccaroli)
+- **Perry M.** - _Maintainer of fork_ - [Pm20390](https://github.com/pm20390)
 
-See also the list of [contributors](https://github.com/mzuccaroli/angular-google-tag-manager/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/pm20390/ng-google-tag-manager/graphs/contributors) who participated in this project.
 
 ## License
 
