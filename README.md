@@ -1,6 +1,6 @@
 # Angular Google Tag Manager Service
 
-I've forked this package from mzuccaroli as he seems to not be maintaining the project anymore. I am using this in production and my team and I will continue to update it.
+I've forked this package from mzuccaroli as there were some issues that needed to be fixed, and I am using this in production. Feel free to create pull requests / commits as needed.
 
 A service library for integrate google tag manager in your angular project
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli)
