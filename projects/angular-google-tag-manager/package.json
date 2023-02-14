@@ -1,0 +1,31 @@
+{
+  "name": "ng-google-tag-manager",
+  "version": "1.7.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pm20390/ng-google-tag-manager"
+  },
+  "description": "A service library for integrate google tag manager in your angular project",
+  "author": "pm2039012@gmail.com",
+  "contributors": [
+    "Marco Zuccaroli <marcozuccaroli@gmail.com>",
+    "Nils Thomann <nils.thomann@quickline.ch>",
+    "Alvaro Junqueira <alvarocjunq@gmail.com>",
+    "Jason Gravell <https://github.com/GravlLift>",
+    "Michael Doyle <michael@thehypometer.com>",
+    "Mathieu Maes <mathieu@webberig.be>",
+    "Stefano Cestari <https://github.com/stefanocestari>",
+    "LE LAY Olivier <https://github.com/liollury>",
+    "Antoine Bursaux <https://github.com/bursauxa>",
+    "Brandon Largeau <https://github.com/Yberion>",
+    "PM20390 <https://github.com/pm20390>"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^15.0.0",
+    "@angular/compiler": "^15.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.4.1"
+  }
+}
